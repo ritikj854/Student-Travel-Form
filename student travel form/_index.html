@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcomme to Travel Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="pg" src="pg.jpg" alt="GIET KHORDA">
+
+    <div class="container">
+        <h1>Welcome To GIET US Trip Form</h1>
+        <p>Enter your Detail and submit this form To Confirm Your Participation in The Trip</p>
+        <p class="submitMsg">Thanks For submitting your form we are happy to see you joininng for the us trip</p>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="Name" placeholder="Enter Your Name">
+            <input type="text" name="Age" id="Age" placeholder="Enter Your Age">
+            <input type="text" name="Gender" id="Gender" placeholder="Enter Your Gender">
+            <input type="Email" name="Email" id="Email" placeholder="Enter Your Email">
+            <input type="Phone" name="Phone" id="Phone" placeholder="Enter Your Phone Number">
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other details here"></textarea>
+            <button class="btn">Submit</button>
+           
+        </form>
+
+
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+
+INSERT INTO `travel` (`srno`, `name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('1', 'textname', '20', 'male', 'rj@rj.com', '2525252514', 'hello this is giet travel form', current_timestamp()); 
